@@ -3,6 +3,7 @@ package com.ll.sbb;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -21,6 +22,7 @@ class SbbApplicationTests
     @Autowired
     private AnswerRepository answerRepository;
 
+    @Transactional
     @Test
     void testJpa()
     {
